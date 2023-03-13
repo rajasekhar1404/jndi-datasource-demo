@@ -1,2 +1,8 @@
-package com.employee.dao;public class EmployeeDAO {
+package com.employee.dao;
+
+import com.employee.entity.Employee;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface EmployeeDAO extends JpaRepository<Employee, Integer> {
+
 }
